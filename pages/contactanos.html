@@ -27,11 +27,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             <a class="nav-link" href="../pages/nosotros.html">Sobre nosotros</a>
             <a class="nav-link" href="../pages/materias.html">Materias</a>
             <a class="nav-link" href="../pages/cursosPrecios.html">Cursos y Precios</a>
-            <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+            <a class="nav-link active" href="../pages/contactanos.html">Contactanos</a>
           </div>
         </div>
       </div>
@@ -39,19 +39,58 @@
   </header>
 
   <main>
-    <section id="contacto">
+    <section id="contact" class="contact">
       <h2>Nuestro <span class="color-acento">Contacto</span></h2>
-      <div class="formulario">
-        <form>
-          <div><label for="name">Nombre:</label></div>
-          <input type="text" id="name">
-          <div><label for="mail">Mail:</label></div>
-          <input type="email" id="mail">
-          <div><label for="consulta">Mensaje:</label></div>
-          <textarea name="consulta" id="consulta" cols="21" rows="10"></textarea>
-          <div><button type="submit" class="boton"><span>Enviar</span></button></div>
-        </form>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <h3>Nuestra ubicación</h3>
+                  <p>Av Libertador 1234, Capital Federal, Buenos Aires</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <h3>Nuestro email</h3>
+                  <p>academia@delosnumeros.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <h3>Llamanos</h3>
+                  <p>+54 9 11 1245 6789</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form class="email-form">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre">
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu email">
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
     </section>
+    
 
   </main>
 
